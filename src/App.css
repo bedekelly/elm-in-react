@@ -22,6 +22,7 @@ button {
   cursor: pointer;
   color: #aaa;
   background: white;
+  outline: 0;
 }
 
 button:active {
@@ -30,8 +31,19 @@ button:active {
 }
 
 h2 {
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   font-weight: 200;
   padding: 0;
   margin: 20px;
+}
+
+body {
+  background: repeating-linear-gradient(
+          to bottom left,
+          #fcfcfc 0%, #fff 5%
+  );
+}
+
+.react-view {
+  background: white;
 }
