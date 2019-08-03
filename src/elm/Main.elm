@@ -1,7 +1,8 @@
 module Main exposing (main)
 
 import Browser exposing (sandbox)
-import Html exposing (Html, button, div, h1, text)
+import Html exposing (Html, button, div, h1, h2, p, text)
+import Html.Attributes exposing (class)
 import Html.Events exposing (onClick)
 import String exposing (fromInt)
 
@@ -24,7 +25,10 @@ type Msg
 
 view : Model -> Html Msg
 view model =
-    button [ onClick Increment ] [ text (fromInt model) ]
+    div [ class "elm-view" ]
+        [ button [ onClick Increment ] [ text ("+ " ++ fromInt model) ]
+        , h2 [] [ text "This section controlled by Elm" ]
+        ]
 
 
 update : Msg -> Model -> Model
