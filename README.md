@@ -1,5 +1,9 @@
 # React-Elm
 
-Example configuration of a project created using Create-React-App, ejected and configured to compile and include an Elm app as a React component.
+Example configuration of a project:
+1. Bootstrapped using Create-React-App
+2. Ejected
+3. Configured to compile Elm apps
+4. Including Elm apps as a React component
 
 ![](Screenshot.png)
